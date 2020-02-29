@@ -8,7 +8,6 @@ class QuestionAdmin(admin.ModelAdmin):
         (None, {"fields": ["question_text"]}),
         ("Date information", {"fields": ["pub_date"]}),
     ]
-    fields = ["pub_date", "question_text"]
 
 
 admin.site.register(Question, QuestionAdmin)
